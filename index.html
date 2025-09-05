@@ -1,44 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Moeda</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <main>
-        <form>
-            <h1>Conversor de Moedas</h1>
-            <div class="caixa-valor">
-                <label for="valor">Insira o valor: </label>
-                <input type="number" id="valor">
-            </div>
-            <div class="caixa-moedas">
-                <div class="moeda">
-                    <label for="de">De</label>
-                    <select id="de">
-                        <option value="brl">BRL</option>
-                        <option value="usd">USD</option>
-                        <option value="euro">EURO</option>
-                    </select>   
-                </div>
+<!doctype html>
 
-                <button type="button"><img src="./assets/arrow.png" alt=""></button>
-                
-                <div class="moeda">
-                    <label for="para">Para</label>
-                    <select id="para">
-                        <option value="brl">BRL</option>
-                        <option value="usd">USD</option>
-                        <option value="euro">EURO</option>
-                    </select>
-                </div>
-            </div>
-            <span id="resultado">Digite um valor válido!</span>
-            <button id="conversor">Converter</button>
-        </form>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de Moeda</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Conversor de Moedas</h1>
+        <div class="caixa-valor">
+          <label for="valor">Insira o valor:</label>
+          <input type="number" id="valor">
+        </div>
+        <div class="caixa-moedas">
+          <div class="moeda">
+            <label for="de">De</label>
+            <select id="de">
+              <option value="brl">BRL</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+            </select>
+          </div>
+
+          <button type="button"><img src="./assets/arrow.png"></button>
+
+          <div class="moeda">
+            <label for="para">Para</label>
+            <select id="para">
+              <option value="brl">BRL</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+            </select>
+          </div>
+        </div>
+        <span id="resultado"></span>
+        <button type="button" id="conversor">Converter</button>
+      </form>
     </main>
-    <script src="script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
